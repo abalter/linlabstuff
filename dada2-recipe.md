@@ -23,6 +23,7 @@ At this point, you can put the above `.condarc` in `<path to conda>/envs/dada2`.
 
 ## 3. Install the packages:
 
+```
     conda install r-knitr r-rmarkdown r-ggplot2 r-gridextra r-nlme r-data.table r-dplyr krb5 curl libssh2 zlib bioconductor-dada2 bioconductor-biocinstaller
     
     r-phangorn
