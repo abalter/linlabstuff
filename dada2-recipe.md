@@ -24,6 +24,17 @@ At this point, you can put the above `.condarc` in `<path to conda>/envs/dada2`.
 ## 3. Install the packages:
 
     conda install r-knitr r-rmarkdown r-ggplot2 r-gridextra r-nlme r-data.table r-dplyr krb5 curl libssh2 zlib bioconductor-dada2 bioconductor-biocinstaller
+    
+    r-phangorn
+    r-structssi
+    r-caret
+    r-e1071
+    r-devtools
+    r-pls
+    
+    DECIPHER, ggnetwork, intergraph, ggrepl
+    
+    
 
 ## 4. Reinstall `krb5`
     conda install krb5   
