@@ -30,11 +30,21 @@ At this point, you can put the above `.condarc` in `<path to conda>/envs/dada2`.
     r-caret
     r-e1071
     r-devtools
-    r-pls
+    (r-pls)
+    (-c cramjaco bioconductor-decipher)
+    
+    (dada2) lab@conda-test:~$ conda install -c cramjaco bioconductor-decipher
+Solving environment: failed
+
+UnsatisfiableError: The following specifications were found to be in conflict:
+  - bioconductor-decipher -> r-base=3.3.2
+  - r-tinytex
+Use "conda info <package>" to see the dependencies for each package.
+
     
     DECIPHER, ggnetwork, intergraph, ggrepl
     
-    
+```
 
 ## 4. Reinstall `krb5`
     conda install krb5   
