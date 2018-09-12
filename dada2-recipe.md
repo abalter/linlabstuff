@@ -77,7 +77,9 @@ Not in regular conda channels:
 
 Not in conda:
 * `ggnetwork`
+  `install.packages('ggnetwork', lib="~/R")`
 * `intergraph`
+  `install.packages('intergraph', lib="~/R")`
 
 Installing from Github:
 Used the package [`githubinstall`](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html) as it allows to specify a `lib` location so as not to pollute conda install. This imports the following packages that should perhaps be installed in conda:
@@ -94,11 +96,8 @@ Used the package [`githubinstall`](https://cran.r-project.org/web/packages/githu
 * testthat
 * whisker
 
-
-Installed `ggnetwork` with `install.packages('ggnetwork', lib="~/R")`
  
 Installed `phyloseqGraphTest` with
- 
 ```
 source("https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/graphtest-functions.R")
 source("https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/package-doc.R")
