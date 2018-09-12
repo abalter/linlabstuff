@@ -74,9 +74,16 @@ Used the package [`githubinstall`](https://cran.r-project.org/web/packages/githu
 * whisker
 
 
-  
+Installed `ggnetwork` with `install.packages('ggnetwork', lib="~/R")`
+ 
+Installed `phyloseqGraphTest` with
+ 
+```
+source("https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/graphtest-functions.R")
+source("https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/package-doc.R")
+```
 
- ```   
+```   
     (dada2) lab@conda-test:~$ conda install -c cramjaco bioconductor-decipher
 Solving environment: failed
 
