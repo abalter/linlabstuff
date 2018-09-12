@@ -68,6 +68,10 @@ Used the package [`githubinstall`](https://cran.r-project.org/web/packages/githu
 * jsonlite
 * mockery
 * utils
+* praise
+* rstudioapi
+* testthat
+* whisker
 
 
   
