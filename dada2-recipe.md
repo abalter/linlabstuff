@@ -49,6 +49,7 @@ Additional for Phyloseq (in parenthesis did not work):
     r-scales
     bioconductor-genefilter
     (bioconductor-impute) # seemes to have already been installed
+    bioconductor-deseq2
 ```
 
 Not in regular conda channels:
