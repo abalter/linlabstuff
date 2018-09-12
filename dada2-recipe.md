@@ -34,8 +34,10 @@ At this point, you can put the above `.condarc` in `<path to conda>/envs/dada2`.
     r-caret 
     r-e1071
     r-devtools
-    
+```
+
 Additional for Phyloseq (in parenthesis did not work):
+```
     r-shiny
     r-miniui
     r-randomforest
@@ -47,6 +49,7 @@ Additional for Phyloseq (in parenthesis did not work):
     r-scales
     bioconductor-genefilter
     (bioconductor-impute) # seemes to have already been installed
+```
 
 Not in regular conda channels:
 * `-c cramjaco bioconductor-decipher`
@@ -56,7 +59,7 @@ Not in conda:
 * `intergraph`
 
 Installing from Github:
-Used the package [link test](www.google.com) [ `githubinstall` ](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html) as it allows to specify a `lib` location so as not to pollute conda install. This imports the following packages that should perhaps be installed in conda:
+Used the package [`githubinstall`](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html) as it allows to specify a `lib` location so as not to pollute conda install. This imports the following packages that should perhaps be installed in conda:
 
 * curl
 * data.table
@@ -69,7 +72,7 @@ Used the package [link test](www.google.com) [ `githubinstall` ](https://cran.r-
 
   
 
-    
+ ```   
     (dada2) lab@conda-test:~$ conda install -c cramjaco bioconductor-decipher
 Solving environment: failed
 
