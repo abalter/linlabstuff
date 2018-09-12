@@ -56,7 +56,7 @@ Not in conda:
 * `intergraph`
 
 Installing from Github:
-used the package [ `githubinstall` ](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html) as it allows to specify a `lib` location so as not to pollute conda install. This imports the following packages that should perhaps be installed in conda:
+Used the package [link test](www.google.com) [ `githubinstall` ](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html) as it allows to specify a `lib` location so as not to pollute conda install. This imports the following packages that should perhaps be installed in conda:
 
 * curl
 * data.table
