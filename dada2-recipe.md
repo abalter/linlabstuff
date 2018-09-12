@@ -26,15 +26,37 @@ At this point, you can put the above `.condarc` in `<path to conda>/envs/dada2`.
 ```
     conda install r-knitr r-rmarkdown r-ggplot2 r-gridextra r-nlme r-data.table r-dplyr krb5 curl libssh2 zlib bioconductor-dada2 bioconductor-biocinstaller
     
+    #extras for downstream analysis
     ??BiocGenerics
     ??BiocParallel
     r-phangorn
-    r-structssi
-    r-caret
+    r-structssi for 
+    r-caret 
     r-e1071
     r-devtools
-    (r-pls)
-    (-c cramjaco bioconductor-decipher)
+    
+Additional for Phyloseq (in parenthesis did not work):
+    r-shiny
+    r-miniui
+    r-randomforest
+    r-dplyr
+    r-ggrepel
+    r-nlme
+    r-reshape2
+    r-pma
+    r-scales
+    bioconductor-genefilter
+    (bioconductor-impute) # seemes to have already been installed
+
+Not in regular conda channels:
+* `-c cramjaco bioconductor-decipher`
+
+Not in conda:
+* `ggnetwork`
+* `intergraph`
+
+  
+
     
     (dada2) lab@conda-test:~$ conda install -c cramjaco bioconductor-decipher
 Solving environment: failed
