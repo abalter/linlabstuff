@@ -76,9 +76,9 @@ Not in regular conda channels:
 * `-c cramjaco bioconductor-decipher`
 
 Not in conda:
-* `ggnetwork`
+* `ggnetwork`  
   `install.packages('ggnetwork', lib="~/R")`
-* `intergraph`
+* `intergraph`  
   `install.packages('intergraph', lib="~/R")`
 
 Installing from Github:
