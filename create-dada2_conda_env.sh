@@ -50,8 +50,9 @@ bioconductor-biocinstaller
 "
 
 downstream_pkg_list="
+r-phyloseq
 r-phangorn
-r-structssi for 
+r-structssi
 r-caret 
 r-e1071
 r-devtools
@@ -70,7 +71,6 @@ r-data.table
 r-httr
 r-jsonlite
 r-mockery
-r-utils
 r-praise
 r-rstudioapi
 r-testthat
@@ -89,7 +89,7 @@ $cmd
 
 echo "installing downstream pkgs: `echo $downstream_pkg_list | sed 's/ /\n  \* /g; s/^/\n  * /'`"
 #echo "installing downstream pkgs: `echo $downstream_pkg_list | sed 's/^/  * /'`"
-cmd="conda install $dada2_pkg_list -y"
+cmd="conda install $downstream_pkg_list -y"
 echo "executing $cmd"
 $cmd
 
