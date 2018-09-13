@@ -50,7 +50,7 @@ bioconductor-biocinstaller
 "
 
 downstream_pkg_list="
-r-phyloseq
+bioconductor-phyloseq
 r-phangorn
 r-structssi
 r-caret 
@@ -93,6 +93,20 @@ cmd="conda install $downstream_pkg_list -y"
 echo "executing $cmd"
 $cmd
 
+echo "Installing items needed that are not in conda"
+
+cmd="install.packages('ggnetwork', lib='~/R')"
+echo "executing $cmd"
+$cmd
+cmd="install.packages('intergraph', lib='~/R')"
+echo "executing $cmd"
+$cmd
+cmd="source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/graphtest-functions.R')"
+echo "executing $cmd"
+$cmd
+cmd="source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/package-doc.R')"
+echo "executing $cmd"
+$cmd
 
 
 exit 0
