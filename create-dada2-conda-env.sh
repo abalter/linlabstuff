@@ -2,7 +2,7 @@
 
 env_name=$1
 
-${env_name:=dada2}
+env_name=${env_name:=dada2}
 
 conda_home=$(which conda | sed 's/\/bin.*$//')
 echo "conda home: $conda_home"
@@ -77,8 +77,8 @@ r-testthat
 r-whisker
 "
 
-# echo "installing dada2 pkgs: `echo $dada2_pkg_list | sed 's/ /\n  \* /g; s/^/\n  * /'`"
-echo "installing dada2 pkgs: `echo $dada2_pkg_list | sed 's/^/  * /'`"
+echo "installing dada2 pkgs: `echo $dada2_pkg_list | sed 's/ /\n  \* /g; s/^/\n  * /'`"
+#echo "installing dada2 pkgs: `echo $dada2_pkg_list | sed 's/^/  * /'`"
 cmd="conda install $dada2_pkg_list -y"
 echo "executing $cmd"
 $cmd
@@ -87,8 +87,8 @@ cmd="conda install krb5 -y"
 echo "executing $cmd"
 $cmd
 
-# echo "installing downstream pkgs: `echo $downstream_pkg_list | sed 's/ /\n  \* /g; s/^/\n  * /'`"
-echo "installing dada2 pkgs: `echo $downstream_pkg_list | sed 's/^/  * /'`"
+echo "installing downstream pkgs: `echo $downstream_pkg_list | sed 's/ /\n  \* /g; s/^/\n  * /'`"
+#echo "installing downstream pkgs: `echo $downstream_pkg_list | sed 's/^/  * /'`"
 cmd="conda install $dada2_pkg_list -y"
 echo "executing $cmd"
 $cmd
