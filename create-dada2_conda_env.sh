@@ -95,16 +95,16 @@ $cmd
 
 echo "Installing items needed that are not in conda"
 
-cmd="install.packages('ggnetwork', lib='~/R')"
+cmd="Rscript -e \"install.packages('ggnetwork', lib='~/R', repos='http://cran.us.r-project.org');\""
 echo "executing $cmd"
 $cmd
-cmd="install.packages('intergraph', lib='~/R')"
+cmd="Rscript -e \"install.packages('intergraph', lib='~/R', repos='http://cran.us.r-project.org');\""
 echo "executing $cmd"
 $cmd
-cmd="source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/graphtest-functions.R')"
+cmd="Rscript -e \"source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/graphtest-functions.R')\""
 echo "executing $cmd"
 $cmd
-cmd="source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/package-doc.R')"
+cmd="Rscript -e \"source('https://raw.githubusercontent.com/cran/phyloseqGraphTest/master/R/package-doc.R')\""
 echo "executing $cmd"
 $cmd
 
