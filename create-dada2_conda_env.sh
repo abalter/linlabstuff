@@ -31,7 +31,21 @@ channels:
   - conda-forge
   - bioconda
   - defaults
+" 
+
+echo "
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
 " > "$conda_env_dir/$env_name/.condarc"
+
+echo "conda_env_dir=$conda_env_dir"
+echo "env_name=$env_name"
+cmd="ls -al $conda_env_dir/$env_name"
+$cmd
+cmd="cat $conda_env_dir/$env_name/.condarc"
+$cmd
 
 echo "activating $env_name"
 cmd="conda activate $env_name"
