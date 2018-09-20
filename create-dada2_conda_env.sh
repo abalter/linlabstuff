@@ -1,5 +1,7 @@
 #!/bin/bash
 
+### https://raw.githubusercontent.com/abalter/microbiome-16s/master/create-dada2_conda_env.sh
+
 env_name=$1
 
 env_name=${env_name:=dada2}
