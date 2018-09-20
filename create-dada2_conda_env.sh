@@ -26,6 +26,13 @@ cmd="conda create -n $env_name -y"
 echo "executing $cmd"
 $cmd
 
+echo "
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+" > conda_env_dir/"$env_name"/.condarc
+
 echo "activating $env_name"
 cmd="conda activate $env_name"
 $cmd
