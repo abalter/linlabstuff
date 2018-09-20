@@ -56,6 +56,8 @@ cmd="conda update --all -y"
 echo "executing $cmd"
 $cmd
 
+exit
+
 dada2_pkg_list="
 r-knitr
 r-rmarkdown
